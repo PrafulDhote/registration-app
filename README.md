@@ -1,4 +1,4 @@
-registration-app
+registration-app ok
 <br>
 Test33
 .
