@@ -26,3 +26,6 @@ veli hair serum lavave. tyamule kesanna pradushan, dhul, ani unhapasun sauraksha
 	J2ME = Desktop application => microsoft office ,p.p , exel. 
 	J2EE = Banking application , e- commerce , telecom , ola , uber ete.
 	J2SE = Mobile , laptop , games , calculatur.  
+
+
+In this file we have to change some content... Thank You..😊
