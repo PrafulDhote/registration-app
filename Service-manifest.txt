@@ -1,0 +1,29 @@
+*****Write Service.yml file***
+---
+apiVersion: V1
+kind: Pod
+metadata: 
+ name: mcapods
+ labels: 
+ app: mcaapp
+spec:
+  containers:
+-  name: mcacontainers
+  image: prafuldhote/nginxtag1
+  ports:
+ - containerPort: 8080
+---
+apiVersion: V1
+kind: Service
+metadata:
+ name: mcasvc
+spec:
+  type: NodePort
+  selector:
+  app: mcaapp
+  ports:
+- port: 80
+ targetPort: 8080
+...
+
+ok Bhia 
