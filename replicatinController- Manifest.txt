@@ -1,0 +1,34 @@
+****Write A One ReplicationController manifest.yml file********
+---
+apiVersion: V1
+kind: ReplicationController
+metadata: 
+ name: mcaRC
+spec: 
+  replicas: 3
+  selector: 
+  app: ITapplication
+  template: 
+  metadata: 
+      name: ITpods
+      labels: 
+      app: ITapplication
+spec: 
+    containers:
+  -  name: ITcontainers
+    image:  xyz
+    ports: 
+   - containerPort: 8080 
+---
+apiVersion: V1
+kind: Service
+metadata: 
+  name: ITsvc
+spec: 
+    type: NodePort
+   selector:
+    app: ITapplication
+   ports:
+ -  port: 80
+   targetPort: 8080
+...
